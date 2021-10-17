@@ -98,7 +98,6 @@ a {
 
 ul {
   margin: 1rem;
-  overflow-y: scroll;
 }
 
 ul li {
@@ -146,8 +145,6 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   min-height: 100%;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;

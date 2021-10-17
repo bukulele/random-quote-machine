@@ -84,7 +84,6 @@ a {
 
 ul {
     margin: 1rem;
-    overflow-y: scroll;
     li {
         @extend %text-properties;
         list-style-type: none;
@@ -110,7 +109,6 @@ ul {
     grid-area: text-block;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     min-height: 100%;
     animation-duration: 1s;
     overflow-y: scroll;
