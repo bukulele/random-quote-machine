@@ -74,21 +74,21 @@ a {
 
 .quote-box {
     @extend %quote-box-styling;
+    max-height: 70%;
 }
 
 .quote-history {
     @extend %quote-box-styling;
     max-height: 70%;
-    .text-block {
-        overflow-y: scroll;
-        ul {
-            margin: 1rem;
-            li {
-                @extend %text-properties;
-                list-style-type: none;
-                font-weight: bold;
-            }
-        }
+}
+
+ul {
+    margin: 1rem;
+    overflow-y: scroll;
+    li {
+        @extend %text-properties;
+        list-style-type: none;
+        font-weight: bold;
     }
 }
 
@@ -111,8 +111,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
+    min-height: 100%;
     animation-duration: 1s;
+    overflow-y: scroll;
 }
 #author {
     align-self: flex-end;
@@ -165,7 +166,6 @@ p {
     %quote-box-styling {
         width: 98%;
         grid-template-columns: 10% 88% 2%;
-        max-height: 50%;
     }
     .quote-image {
         font-size: 1rem;

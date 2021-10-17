@@ -26,7 +26,6 @@ function QuoteBox() {
         setAnimationName('fadeout')
         setQuoteStatus(!quoteStatus)
         setMainColor(MAINCOLOR)
-        console.log(`next quote`)
     }
 
     function copyToClipboard() {
