@@ -3,19 +3,30 @@ import {
     faHistory,
     faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons'
-import Button from './button'
+import Button from '../button/button'
+import styles from './buttons-block.module.css'
 
-function ButtonsBlock(props) {
-    let quote = props.quote
-    let author = props.author
+function ButtonsBlock({
+    quote,
+    author,
+    style,
+    toggleDisplayHistory,
+    loadNewQuote,
+}) {
     let url = `https://twitter.com/intent/tweet?text="${quote}" ${author} %23quotes`
-    let ahref = <a id="tweet-quote" href={url} target="_blank"></a>
+    let ahref = (
+        <a
+            id="tweet-quote"
+            className={styles.tweetQuote}
+            href={url}
+            target="_blank"
+        ></a>
+    )
     return (
-        <div className="bottom-block">
+        <div className={styles.bottomBlock}>
             <Button
-                className="button-tweet"
                 id="tweet"
-                style={props.style}
+                style={style}
                 icon={faTwitter}
                 ahref={ahref}
                 title={'TWEET'}
@@ -23,17 +34,15 @@ function ButtonsBlock(props) {
 
             <Button
                 id="button-history"
-                className="button-history"
-                onClick={props.toggleDisplayHistory}
-                style={props.style}
+                onClick={toggleDisplayHistory}
+                style={style}
                 icon={faHistory}
                 title={'History'}
             />
             <Button
                 id="new-quote"
-                className="button-new-quote"
-                onClick={props.loadNewQuote}
-                style={props.style}
+                onClick={loadNewQuote}
+                style={style}
                 icon={faChevronCircleRight}
                 title={'New quote'}
             />

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './button.module.css'
 
-function Button(props) {
+function Button({ style, id, onClick, title, icon, ahref }) {
     const [opacity, setOpacity] = useState(1)
 
     function onMouseEnter() {
@@ -12,22 +13,22 @@ function Button(props) {
         setOpacity(1)
     }
 
-    let style = {
-        ...props.style,
+    let styleOpacity = {
+        ...style,
         opacity: opacity,
     }
 
     return (
         <button
-            id={props.id}
-            className={'button ' + props.className}
-            onClick={props.onClick}
-            style={style}
+            id={id}
+            className={styles.button}
+            onClick={onClick}
+            style={styleOpacity}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-            title={props.title}
+            title={title}
         >
-            <FontAwesomeIcon icon={props.icon} /> {props.ahref}
+            <FontAwesomeIcon icon={icon} /> {ahref}
         </button>
     )
 }

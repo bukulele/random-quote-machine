@@ -1,0 +1,29 @@
+/*
+brand-color: #fcf9e6;
+*/
+
+.textBlock {
+    grid-area: text-block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    animation-duration: 1s;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+.author {
+    align-self: flex-end;
+}
+
+.text {
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        font-size: 1rem;
+    }
+}
