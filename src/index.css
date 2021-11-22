@@ -1,66 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 /*
 brand-color: #fcf9e6;
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body,
 #root,
 .container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-top: 2px solid #fcf9e6;
-    width: 100%;
-    height: 1.5rem;
-    color: #fcf9e6;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-top: 2px solid #fcf9e6;
+  width: 100%;
+  height: 1.5rem;
+  color: #fcf9e6;
 }
 
 .bukulele-logo {
-    margin: 1px;
-    height: 80%;
-    width: auto;
+  margin: 1px;
+  height: 80%;
+  width: auto;
 }
 .footer p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 .footer a {
-    height: 100%;
+  height: 100%;
 }
 
 #new-quote {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeout {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

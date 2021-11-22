@@ -44,12 +44,6 @@
             "last 1 safari version"
         ]
     },
-    "prettier": {
-        "trailingComma": "es5",
-        "tabWidth": 4,
-        "semi": false,
-        "singleQuote": true
-    },
     "devDependencies": {
         "gh-pages": "^3.2.3"
     }

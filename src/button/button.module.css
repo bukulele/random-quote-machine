@@ -3,30 +3,30 @@ brand-color: #fcf9e6;
 */
 
 .button {
-    height: 3rem;
-    width: 3rem;
-    border: none;
-    border-radius: 5px;
-    line-height: 100%;
-    text-align: center;
-    color: #fcf9e6;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    position: relative;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 5px;
+  line-height: 100%;
+  text-align: center;
+  color: #fcf9e6;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  position: relative;
 }
 
 @media only screen and (max-width: 1200px) {
-    .button {
-        height: 2.5rem;
-        width: 2.5rem;
-        font-size: 1.4rem;
-    }
+  .button {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .button {
-        height: 2rem;
-        width: 2rem;
-        font-size: 1.3rem;
-    }
+  .button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.3rem;
+  }
 }
